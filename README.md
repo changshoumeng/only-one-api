@@ -116,8 +116,7 @@ Chat 接口支持流式与非流式返回。后端会把请求中的逻辑模型
 │   ├── tests/            # Vitest 测试
 │   ├── package.json
 │   └── vite.config.ts    # dev 代理和 build 输出配置
-├── docs/                 # 架构、运维、变更和待办文档
-└── study/llmgw/          # LLM gateway 学习/演进参考工程
+
 ```
 
 ## 快速开始
