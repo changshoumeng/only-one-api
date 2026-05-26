@@ -1,0 +1,34 @@
+
+# 数据库配置
+database:
+  # 数据库类型，可选 sqlite \ mysql
+  # - sqlite: 使用 SQLite 数据库，需要指定 db_path
+  # - mysql: 使用 MySQL 数据库，需要指定 host, port, user, password, database
+  use_db: sqlite
+
+  sqlite:
+    db_path: ./db/llm.db
+
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    user: root
+    password: 123
+    database: db
+
+# 代理设置，用于访问国外大模型服务
+proxy:
+  # 代理类型，可选 system \ manual \ none
+  # - system: 使用系统代理，自动获取操作系统代理设置
+  # - manual: 手动配置代理，需要指定 url
+  # - none: 不使用代理
+  type: none
+  url: http://127.0.0.1:7890
+
+free_model:
+  base_url: https://open.bigmodel.cn/api/paas/v4
+  api_key: c90f1ba50cdb437d98e87c46b0287baa.69CcHJD1EK8sdZ5V
+  model: glm-4.5-flash
+
+# Aihubmix 模型的优惠码
+aihubmix_discount_code: test
